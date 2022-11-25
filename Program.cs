@@ -48,6 +48,7 @@ if(sInput != "") {
     }
     if(isSingleElement) arInput = new String[]{temp};
     else arInput = addElementToArray(arInput, temp);
+    // Вывести в консоль строку с данными Входного массива.
     //Console.WriteLine($"Входной массив:\n[\"{String.Join(",",arInput).Replace(",","\", \"")}\"]");
     // через массивы
     Console.WriteLine($"Входной массив:\n{ArrayToString(arInput)}");
@@ -70,8 +71,8 @@ if(sInput != "") {
         sOutput = ArrayToString(arOutput);
     }    
 } else Console.WriteLine($"Входной массив:\n[]");
-
-// Вывести результат.
+ 
+// Вывести в консоль строку с данными Выходного массива.
 Console.WriteLine($"Выходной массив:");
 if(arOutput == null || arOutput.Length == 0) Console.Write("[]");
 else Console.Write(sOutput);
